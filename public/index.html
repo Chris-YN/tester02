@@ -14,7 +14,7 @@
   <p id="response-output">Response Placeholder</p>
 
   <script>
-    import process from 'dotenv'
+    // import process from 'dotenv'
     document.addEventListener('DOMContentLoaded', () => {
       const fetchBtn = document.getElementById('fetch-btn')
       const responseText = document.getElementById('response-output')
@@ -26,7 +26,8 @@
         responseText.innerText = JSON.stringify(response.apiKey);
       })
     })
-    console.log(process.env.key)
+    const key = procss.env.key;
+    console.log(key)
   </script>
 </body>
 
